@@ -350,7 +350,7 @@ div.content {
 body {
   --text-white: #ffffff;
   --text-dark: Black;
-  --bg-white: #FAF2F0;
+  --bg-white: #FFE2D1;
   --bg-dark: #272829;
   --header-white: #E4BFFE;
   --header-dark: #9C80B0;
@@ -363,7 +363,7 @@ body {
   --bg-white: #272829;
   --bg-dark: #FAF2F0;
   --header-white: #9C80B0;
-  --header-dark: #E4BFFE;
+  --header-dark: #FFE2D1;
 }
 * {box-sizing: border-box}
 
