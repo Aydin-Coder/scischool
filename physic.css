@@ -529,4 +529,16 @@ hr {
   background-color: #A825FF;
   border-color: #A825FF;
 }
+p {
+  text-align: right;
+}
+h2{
+  text-align: right;
+}
+link {
+  background-color: var(--header-white);
+  color: black;
+  width: 100%;
+  text-decoration: none;
 
+}
