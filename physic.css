@@ -533,7 +533,7 @@ p {
 h2{
   text-align: right;
 }
-link {
+.link {
   background-color: var(--header-white);
   color: black;
   width: 100%;
