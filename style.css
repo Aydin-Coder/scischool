@@ -478,4 +478,7 @@ ul, #myUL {
 .active2 {
   display: block;
 }
-
+hr {
+ background-color: #A825FF;
+ color: #A825FF;
+}
