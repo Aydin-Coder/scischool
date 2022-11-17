@@ -528,10 +528,11 @@ hr {
   border-color: #A825FF;
 }
 p {
-  text-align: right;
+  text-align: center;
 }
 h2{
-  text-align: right;
+    text-align: center;
+
 }
 .link {
   background-color: var(--header-white);
