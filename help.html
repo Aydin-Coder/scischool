@@ -1,0 +1,1113 @@
+
+
+
+
+
+
+
+<!DOCTYPE html> 
+
+
+
+
+
+
+
+<html> 
+
+
+
+
+
+
+
+<head> 
+
+
+
+
+
+
+
+<script src="script.js"></script> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+
+
+
+
+
+
+
+<title>Sci-School | Chemitary</title> 
+
+
+
+
+
+
+
+<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'> 
+
+
+
+
+
+
+
+<link rel="icon" type="image/x-icon" href="Sci-School2.png"> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="help.css"> 
+
+
+
+
+
+
+
+</head> 
+
+
+
+
+
+
+
+<meta charset="UTF-8"> 
+
+
+
+
+
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+
+
+
+
+
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"> 
+
+
+
+
+
+
+
+<style> 
+
+
+
+.continer:hover .overlay { 
+
+opacity: 1; 
+
+} 
+
+.poster img{ 
+
+border: 1px solid #888; 
+
+border-radius: 4px; 
+
+padding: 5px; 
+
+margin-left: auto; 
+
+margin-right: auto; 
+
+width: 240px; 
+
+display: flex; 
+
+justify-content: center; 
+
+vertical-align: center; 
+
+margin: 0 auto; 
+
+align: center; 
+
+} 
+
+img:hover { 
+
+box-shadow: 0 0 2px 1px rgba(220, 118, 51, 0.7); 
+
+} 
+
+.row { 
+
+display: flex; 
+
+flex-wrap: wrap; 
+
+padding: 0 4px; 
+
+} 
+
+
+
+/* Create four equal columns that sits next to each other */ 
+
+.column { 
+
+flex: 25%; 
+
+max-width: 25%; 
+
+padding: 0 4px; 
+
+} 
+
+
+
+.column img { 
+
+margin-top: 8px; 
+
+vertical-align: middle; 
+
+width: 100%; 
+
+} 
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */ 
+
+@media screen and (max-width: 800px) { 
+
+.column { 
+
+flex: 50%; 
+
+max-width: 50%; 
+
+} 
+
+} 
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */ 
+
+@media screen and (max-width: 600px) { 
+
+.column { 
+
+flex: 100%; 
+
+max-width: 100%; 
+
+} 
+
+} 
+
+hr.dashed { 
+
+border-top: 1px solid #A825FF; 
+
+} 
+
+
+
+
+
+</style> 
+
+
+
+
+
+
+
+<body> 
+
+
+
+
+
+
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html"> Sci-School</a>
+<button id="toggle" class="darkm"><i class="fa fa-moon-o"></i></button> 
+ <div class="header-right">
+  <div class="dropdown">
+    <button class="dropbtn">درس ها
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="math.html">ریاضی</a>
+      <a href="physic.html">فیزیک</a>
+      <a href="chem.html">شیمی</a>
+      <a href="bio.html">زیست شناسی</a>
+      <a href="help.html">مشاوره</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">تماس با ما
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="contact.html">ارتباط با ما</a>
+      <a href="https://forms.gle/FbQCMaexwpXbiQCy8">ارسال محتوا</a>
+      <a href="about.html">درباره ما</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">آزمون
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="https://forms.gle/sY1vJCyFWRJRCkXo8">ریاضی هفتم</a>
+      <a href="https://forms.gle/vCAytgLhuUcmJJpS9">فیزیک هفتم</a>
+      <a href="https://forms.gle/RNnUA89U9AyxdYJ49">شیمی هفتم</a>
+      <a href="https://forms.gle/NE4WjPStJqka9GGW9">زیست هفتم</a>
+      <a href="https://forms.gle/MarB48sxH6XnFtkLA">ریاضی هشتم</a>
+      <a href="https://forms.gle/q5FZYAhM8d4Kso4WA">فیزیک هشتم</a>
+      <a href="https://forms.gle/vKTnsUKsjoPZwTfMA">شیمی هشتم</a>
+      <a href="https://forms.gle/3L384sigFYxJpwiG8">زیست هشتم</a>
+      <a href="https://forms.gle/zzCSUpSsmLq7Jcdg6">ریاضی نهم</a>
+      <a href="https://forms.gle/DJg8BNYUJGTHh6gi6">فیزیک نهم</a>
+      <a href="https://forms.gle/LZWL8AZnSGjBLz979">شیمی نهم</a>
+      <a href="https://forms.gle/AX8cJErQSzUV2imf6">زیست نهم</a>
+    </div>
+  </div>
+</div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+
+
+
+
+<script> 
+
+
+
+
+
+
+
+window.onscroll = function() {myFunction()}; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var header = document.getElementById("header"); 
+
+
+
+
+
+
+
+var sticky = header.offsetTop; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function myFunction() { 
+
+
+
+
+
+
+
+if (window.pageYOffset >= sticky) { 
+
+
+
+
+
+
+
+header.classList.add("sticky") 
+
+
+
+
+
+
+
+} else { 
+
+
+
+
+
+
+
+header.classList.remove("sticky"); 
+
+
+
+
+
+
+
+} 
+
+
+
+
+
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script> 
+
+
+
+
+
+
+
+
+
+
+
+<script> 
+
+
+
+
+
+
+
+window.onscroll = function() {myFunction()}; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var header = document.getElementById("header"); 
+
+
+
+
+
+
+
+var sticky = header.offsetTop; 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function myFunction() { 
+
+
+
+
+
+
+
+if (window.pageYOffset >= sticky) { 
+
+
+
+
+
+
+
+header.classList.add("sticky") 
+
+
+
+
+
+
+
+} else { 
+
+
+
+
+
+
+
+header.classList.remove("sticky"); 
+
+
+
+
+
+
+
+} 
+
+
+
+
+
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script> 
+
+
+
+
+
+
+
+<div class="hero-image"> 
+
+
+
+
+
+
+
+<div class="hero-text"> 
+
+
+
+
+
+
+
+</div> 
+
+
+
+
+
+
+
+</div> 
+
+
+
+
+
+
+
+<h2>مشاوره</h2> 
+
+
+
+
+
+
+
+<p></p> 
+
+<br> 
+
+<hr class="dashed"> 
+
+
+
+
+
+
+
+<br> 
+
+<div class="row"> 
+
+<div class="column"> 
+
+<a href="هدایت تحصیلی.pdf"><img src="PDFh.png" alt="هدایت تحصیلی" class="centeredimg"></a> 
+
+</div> 
+
+<div class="column"> 
+
+<a href="تمرکز.pdf"><img src="PDFt.png" alt="تقویت تمرکز" class="centeredimg"></a> 
+
+</div> 
+
+<div class="column"> 
+
+<a href="امتحان.pdf"><img src="PDFe.png" alt="ایام امتحانات" class="centeredimg"></a> 
+
+</div> 
+
+<div class="column"> 
+
+<a href="استرس.pdf"><img src="PDFs.png" alt="کنترل استرس" class="centeredimg"></a> 
+
+</div> 
+
+</div> 
+
+<br> 
+
+<hr class="dashed"> 
+
+<br> 
+
+
+
+
+
+<script> 
+
+
+
+
+
+const toggle = document.getElementById("toggle"); 
+
+
+
+
+
+
+
+const theme = window.localStorage.getItem("theme"); 
+
+
+
+
+
+
+
+if (theme === "dark") document.body.classList.add("dark"); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+toggle.addEventListener("click", () => { 
+
+
+
+
+
+
+
+document.body.classList.toggle("dark"); 
+
+
+
+
+
+
+
+if (theme === "dark") { 
+
+
+
+
+
+
+
+window.localStorage.setItem("theme", "light"); 
+
+
+
+
+
+
+
+} else window.localStorage.setItem("theme", "dark"); 
+
+
+
+
+
+
+
+}); 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+refresh.addEventListener("click", () => { 
+
+
+
+
+
+
+
+window.location.reload(); 
+
+
+
+
+
+
+
+}); 
+
+
+
+
+
+
+
+</script> 
+
+
+
+
+
+
+
+</body> 
+
+</script> 
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+
+
+
+<script> 
+
+
+
+$(document).ready(function(){ 
+
+
+
+// Add smooth scrolling to all links 
+
+
+
+$("link").on('click', function(event) { 
+
+
+
+
+
+
+
+// Make sure this.hash has a value before overriding default behavior 
+
+
+
+if (this.hash !== "") { 
+
+
+
+// Prevent default anchor click behavior 
+
+
+
+event.preventDefault(); 
+
+
+
+
+
+
+
+// Store hash 
+
+
+
+var hash = this.hash; 
+
+
+
+
+
+
+
+// Using jQuery's animate() method to add smooth page scroll 
+
+
+
+// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area 
+
+
+
+$('html, body').animate({ 
+
+
+
+scrollTop: $(hash).offset().top 
+
+
+
+}, 800, function(){ 
+
+
+
+
+
+
+
+// Add hash (#) to URL when done scrolling (default click behavior) 
+
+
+
+window.location.hash = hash; 
+
+
+
+}); 
+
+
+
+} // End if 
+
+
+
+}); 
+
+
+
+}); 
+
+
+
+</script> 
+
+
+
+<script> 
+
+
+
+var prevScrollpos = window.pageYOffset; 
+
+
+
+window.onscroll = function() { 
+
+
+
+var currentScrollPos = window.pageYOffset; 
+
+
+
+if (prevScrollpos > currentScrollPos) { 
+
+
+
+document.getElementById("navbar").style.top = "0"; 
+
+
+
+} else { 
+
+
+
+document.getElementById("navbar").style.top = "-400px"; 
+
+
+
+} 
+
+
+
+prevScrollpos = currentScrollPos; 
+
+
+
+} 
+
+
+
+</script> 
+
+<script> 
+
+// Get the modal 
+
+var modal = document.getElementById("myModal"); 
+
+
+
+// Get the button that opens the modal 
+
+var btn = document.getElementById("myBtn"); 
+
+
+
+// Get the <span> element that closes the modal 
+
+var span = document.getElementsByClassName("close")[0]; 
+
+
+
+// When the user clicks the button, open the modal 
+
+btn.onclick = function() { 
+
+modal.style.display = "block"; 
+
+} 
+
+
+
+// When the user clicks on <span> (x), close the modal 
+
+span.onclick = function() { 
+
+modal.style.display = "none"; 
+
+} 
+
+
+
+// When the user clicks anywhere outside of the modal, close it 
+
+window.onclick = function(event) { 
+
+if (event.target == modal) { 
+
+modal.style.display = "none"; 
+
+} 
+
+} 
+
+var modal2 = document.getElementById("myModal2"); 
+
+
+
+// Get the button that opens the modal 
+
+var btn2 = document.getElementById("myBtn2"); 
+
+
+
+// Get the <span> element that closes the modal 
+
+var span = document.getElementsByClassName("close2")[0]; 
+
+
+
+// When the user clicks the button, open the modal 
+
+btn2.onclick = function() { 
+
+modal2.style.display = "block"; 
+
+} 
+
+
+
+// When the user clicks on <span> (x), close the modal 
+
+span.onclick = function() { 
+
+modal2.style.display = "none"; 
+
+} 
+
+
+
+// When the user clicks anywhere outside of the modal, close it 
+
+window.onclick = function(event) { 
+
+if (event.target == modal2) { 
+
+modal2.style.display = "none"; 
+
+} 
+
+} 
+
+// Model 
+
+var modal3 = document.getElementById("myModal3"); 
+
+
+
+// Get the button that opens the modal 
+
+var btn3 = document.getElementById("myBtn3"); 
+
+
+
+// Get the <span> element that closes the modal 
+
+var span = document.getElementsByClassName("close3")[0]; 
+
+
+
+// When the user clicks the button, open the modal 
+
+btn3.onclick = function() { 
+
+modal3.style.display = "block"; 
+
+} 
+
+
+
+// When the user clicks on <span> (x), close the modal 
+
+span.onclick = function() { 
+
+modal3.style.display = "none"; 
+
+} 
+
+
+
+// When the user clicks anywhere outside of the modal, close it 
+
+window.onclick = function(event) { 
+
+if (event.target == modal3) { 
+
+modal3.style.display = "none"; 
+
+} 
+
+} 
+
+
+
+</script> 
+
+
+
+<div class="footer"> 
+
+<h2>© 2023 SciSchool</h2> 
+
+<h2>aydin.ebrahimi@gmail.com</h2> 
+
+<h2>mahdiadibnafisi@gmail.com</h2> 
+
+</div> 
+
+
+
+
+
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
