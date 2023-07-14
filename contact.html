@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+
+<html>
+<meta charset="UTF-8">
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.cerds{
+  text-align: center;
+}
+.column {
+  float: left;
+  width: 50%;
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 16px;
+  text-align: center;
+  width: 400px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #1f3b65;
+  color: white;
+}
+
+.container {
+  padding: 0 26px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.buttuun {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.buttuun:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #1f3b67;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #1E90FF;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #1f5d8e;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+</style>
+
+<head>
+
+<script src="script.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<title>Sci-School Website</title>
+
+<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
+
+<link rel="icon" type="image/x-icon" href="Sci-School2.png">
+
+<link rel="stylesheet" href="about.css">
+
+</head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+
+<style>
+
+</style>
+
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="index.html"> Sci-School</a>
+<button id="toggle" class="darkm"><i class="fa fa-moon-o"></i></button> 
+ <div class="header-right">
+  <div class="dropdown">
+    <button class="dropbtn">درس ها
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="math.html">ریاضی</a>
+      <a href="physic.html">فیزیک</a>
+      <a href="chem.html">شیمی</a>
+      <a href="bio.html">زیست شناسی</a>
+    </div>
+  </div>
+  <div class="dropdown">
+    <button class="dropbtn">تماس با ما
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="contact.html">ارتباط با ما</a>
+      <a href="about.html">درباره ما</a>
+    </div>
+  </div>
+</div>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+
+
+</div> 
+
+
+
+<script> 
+
+
+
+window.onscroll = function() {myFunction()}; 
+
+
+
+
+
+
+
+var header = document.getElementById("header"); 
+
+
+
+var sticky = header.offsetTop; 
+
+
+
+
+
+
+
+function myFunction() { 
+
+
+
+if (window.pageYOffset >= sticky) { 
+
+
+
+header.classList.add("sticky") 
+
+
+
+} else { 
+
+
+
+header.classList.remove("sticky"); 
+
+
+
+} 
+
+
+
+} 
+
+
+
+
+
+
+
+</script> 
+
+
+
+<div class="hero-image">
+
+<div class="hero-text">
+
+</div>
+
+</div>
+<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc4AH11HW4RfftKWAmAcKH_SufsC3XUEnFOW7c2n0ZQ_a2lXg/viewform?embedded=true" width="640" height="677" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe><script>
+
+const toggle = document.getElementById("toggle");
+
+const theme = window.localStorage.getItem("theme");
+
+if (theme === "dark") document.body.classList.add("dark");
+
+
+
+toggle.addEventListener("click", () => {
+
+document.body.classList.toggle("dark");
+
+if (theme === "dark") {
+
+window.localStorage.setItem("theme", "light");
+
+} else window.localStorage.setItem("theme", "dark");
+
+});
+
+
+
+refresh.addEventListener("click", () => {
+
+window.location.reload();
+
+});
+
+</script>
+<div class="footer">
+<h2>© 2023 SciSchool</h2>
+    <h2>aydin.ebrahimi@gmail.com</h2>
+  <h2>mahdiadibnafisi@gmail.com</h2>
+</div>
+
+</body>
+
+</html>
+
+
