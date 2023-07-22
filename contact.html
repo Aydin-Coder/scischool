@@ -144,9 +144,9 @@ div.content {
 
 <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
 
-<link rel="icon" type="image/x-icon" href="Sci-School2.png">
+<link rel="icon" type="image/x-icon" href="pictures\Sci-School2.png">
 
-<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="CSS\about.css">
 
 </head>
 
@@ -162,99 +162,124 @@ div.content {
 
 <body>
 
-<div class="topnav" id="myTopnav">
-  <a href="index.html"> Sci-School</a>
-<button id="toggle" class="darkm"><i class="fa fa-moon-o"></i></button> 
- <div class="header-right">
-  <div class="dropdown">
-    <button class="dropbtn">درس ها
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="math.html">ریاضی</a>
-      <a href="physic.html">فیزیک</a>
-      <a href="chem.html">شیمی</a>
-      <a href="bio.html">زیست شناسی</a>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html"> Sci-School</a>
+  <button id="toggle" class="darkm"><i class="fa fa-moon-o"></i></button> 
+   <div class="header-right">
+    <div class="dropdown">
+      <button class="dropbtn">درس ها
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="math.html">ریاضی</a>
+        <a href="physic.html">فیزیک</a>
+        <a href="chem.html">شیمی</a>
+        <a href="bio.html">زیست شناسی</a>
+        <a href="help.html">مشاوره</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">تماس با ما
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="contact.html">ارتباط با ما</a>
+        <a href="https://forms.gle/FbQCMaexwpXbiQCy8">ارسال محتوا</a>
+        <a href="about.html">درباره ما</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="dropbtn">آزمون
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="Math7.html">ریاضی هفتم</a>
+        <a href="Phy7.html">فیزیک هفتم</a>
+        <a href="Chem7.html">شیمی هفتم</a>
+        <a href="Bio7.html">زیست هفتم</a>
+        <a href="Math8.html">ریاضی هشتم</a>
+        <a href="Phy8.html">فیزیک هشتم</a>
+        <a href="Chem8.html">شیمی هشتم</a>
+        <a href="Bio8.html">زیست هشتم</a>
+        <a href="Math9.html">ریاضی نهم</a>
+        <a href="Phy9.html">فیزیک نهم</a>
+        <a href="Chem9.html">شیمی نهم</a>
+        <a href="Bio9.html">زیست نهم</a>
+          </div>
     </div>
   </div>
-  <div class="dropdown">
-    <button class="dropbtn">تماس با ما
-      <i class="fa fa-caret-down"></i>
-    </button>
-    <div class="dropdown-content">
-      <a href="contact.html">ارتباط با ما</a>
-      <a href="about.html">درباره ما</a>
-    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
-</div>
-  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-</div>
+  
+  
+  
+  <script> 
+  // Topnav Responsive
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
-
-
-</div> 
-
-
-
-<script> 
-
-
-
-window.onscroll = function() {myFunction()}; 
-
-
-
-
-
-
-
-var header = document.getElementById("header"); 
-
-
-
-var sticky = header.offsetTop; 
-
-
-
-
-
-
-
-function myFunction() { 
-
-
-
-if (window.pageYOffset >= sticky) { 
-
-
-
-header.classList.add("sticky") 
-
-
-
-} else { 
-
-
-
-header.classList.remove("sticky"); 
-
-
-
-} 
-
-
-
-} 
-
-
-
-
-
-
-
-</script> 
-
-
+  
+  
+  window.onscroll = function() {myFunction()}; 
+  
+  
+  
+  
+  
+  
+  
+  var topnav = document.getElementById("topnav"); 
+  
+  
+  
+  var sticky = topnav.offsetTop; 
+  
+  
+  
+  
+  
+  
+  
+  function myFunction() { 
+  
+  
+  
+  if (window.pageYOffset >= sticky) { 
+  
+  
+  
+  topnav.classList.add("sticky") 
+  
+  
+  
+  } else { 
+  
+  
+  
+  topnav.classList.remove("sticky"); 
+  
+  
+  
+  } 
+  
+  
+  
+  } 
+  
+  
+  
+  
+  
+  
+  
+  </script> 
+  
 
 <div class="hero-image">
 

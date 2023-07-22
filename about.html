@@ -291,11 +291,11 @@ float: none;
 
 
 
-<link rel="icon" type="image/x-icon" href="Sci-School2.png">
+<link rel="icon" type="image/x-icon" href="pictures\Sci-School2.png">
 
 
 
-<link rel="stylesheet" href="about.css">
+<link rel="stylesheet" href="CSS\about.css">
 
 
 
@@ -358,19 +358,19 @@ float: none;
       <i class="fa fa-caret-down"></i>
     </button>
     <div class="dropdown-content">
-      <a href="https://forms.gle/sY1vJCyFWRJRCkXo8">ریاضی هفتم</a>
-      <a href="https://forms.gle/vCAytgLhuUcmJJpS9">فیزیک هفتم</a>
-      <a href="https://forms.gle/RNnUA89U9AyxdYJ49">شیمی هفتم</a>
-      <a href="https://forms.gle/NE4WjPStJqka9GGW9">زیست هفتم</a>
-      <a href="https://forms.gle/MarB48sxH6XnFtkLA">ریاضی هشتم</a>
-      <a href="https://forms.gle/q5FZYAhM8d4Kso4WA">فیزیک هشتم</a>
-      <a href="https://forms.gle/vKTnsUKsjoPZwTfMA">شیمی هشتم</a>
-      <a href="https://forms.gle/3L384sigFYxJpwiG8">زیست هشتم</a>
-      <a href="https://forms.gle/zzCSUpSsmLq7Jcdg6">ریاضی نهم</a>
-      <a href="https://forms.gle/DJg8BNYUJGTHh6gi6">فیزیک نهم</a>
-      <a href="https://forms.gle/LZWL8AZnSGjBLz979">شیمی نهم</a>
-      <a href="https://forms.gle/AX8cJErQSzUV2imf6">زیست نهم</a>
-    </div>
+      <a href="Math7.html">ریاضی هفتم</a>
+      <a href="Phy7.html">فیزیک هفتم</a>
+      <a href="Chem7.html">شیمی هفتم</a>
+      <a href="Bio7.html">زیست هفتم</a>
+      <a href="Math8.html">ریاضی هشتم</a>
+      <a href="Phy8.html">فیزیک هشتم</a>
+      <a href="Chem8.html">شیمی هشتم</a>
+      <a href="Bio8.html">زیست هشتم</a>
+      <a href="Math9.html">ریاضی نهم</a>
+      <a href="Phy9.html">فیزیک نهم</a>
+      <a href="Chem9.html">شیمی نهم</a>
+      <a href="Bio9.html">زیست نهم</a>
+      </div>
   </div>
 </div>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
@@ -534,13 +534,13 @@ header.classList.remove("sticky");
 
 <div class="card">
 
-<img src="aydin.jpg" alt="Aydin" style="width:100%">
+<img src="pictures\aydin.jpg" alt="Aydin" style="width:100%">
 
 <div class="container">
 
 <h2>آیدین ابراهیمی</h2>
 
-<p class="title">برنامه‌نویس</p>
+<p class="title">برنامه‌نویس و طراح</p>
 
 <p>دانش آموز مدرسه آیت ا‫...‬ شهید مدنی تبریز</p>
 
@@ -556,13 +556,13 @@ header.classList.remove("sticky");
 
 <div class="card">
 
-<img src="Adib.jpg" alt="Mehdi" style="width:100%">
+<img src="pictures\Adib.jpg" alt="Mehdi" style="width:100%">
 
 <div class="container">
 
 <h2>مهدی ادیب </h2>
 
-<p class="title">برنامه‌نویس و نویسنده </p>
+<p class="title">برنامه‌نویس و طراح </p>
 
 <p>دانش آموز مدرسه آیت ا‫...‬ شهید مدنی تبریز</p>
 
@@ -635,6 +635,15 @@ window.location.reload();
 });
 
 
+// Topnav Responsive
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 </script>
 
