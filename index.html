@@ -12,7 +12,7 @@
 
 <link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
 
-<link rel="icon" type="image/x-icon" href="Sci-School2 copy.png">
+<link rel="icon" type="image/x-icon" href="pictures\Sci-School2.png">
 
 <link rel="stylesheet" href="CSS\style.css">
 
@@ -77,64 +77,6 @@
 
 
 
-<script> 
-
-
-
-window.onscroll = function() {myFunction()}; 
-
-
-
-
-
-
-
-var topnav = document.getElementById("topnav"); 
-
-
-
-var sticky = topnav.offsetTop; 
-
-
-
-
-
-
-
-function myFunction() { 
-
-
-
-if (window.pageYOffset >= sticky) { 
-
-
-
-topnav.classList.add("sticky") 
-
-
-
-} else { 
-
-
-
-topnav.classList.remove("sticky"); 
-
-
-
-} 
-
-
-
-} 
-
-
-
-
-
-
-
-</script> 
-
 
 
 <div class="hero-image">
@@ -174,94 +116,169 @@ topnav.classList.remove("sticky");
 <hr class="dashed"> 
 <h2>آزمون آنلاین</h2>
 <!-- Slideshow container -->
-<div class="slideshow-container">
 
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <a href="Math7.html"><img src="pictures\em7.png" style="width:50%; margin-left:250px"></a>
-    <div class="text">ریاضی هفتم</div>
+<style>
+#slider{
+width:80%;
+margin:0px auto;
+margin-top: 100px;
+max-width: 600px;
+position:relative;
+overflow:hidden;
+border: 10px solid white;
+box-shadow:2px 5px 10px rgba(0,0,0,0.4);;
+}
+
+.slide{
+width:100%;
+
+display:none;
+animation-name:fade;
+animation-duration:1s;
+
+}
+img{
+width:100%;
+}
+@keyframes fade{
+from{opacity:0.5;}
+to{opacity:1;}
+}
+
+.controls{
+position:absolute;
+top:50%;
+transform:translateY(-50%);
+font-size:1.5em;
+padding:15px 10px;
+border-radius:5px;
+
+}
+
+.controls:hover{
+background:white;
+transition:0.3s;
+}
+
+.controls:active{
+color:grey;
+}
+
+#left-arrow{
+left:10px;
+}
+
+#right-arrow{
+right:10px;
+}
+
+#dots-con{
+
+text-align:center;
+}
+.dot{
+display:inline-block;
+background:grey;
+padding:8px;
+border-radius:50%;
+margin:10px 5px;
+}
+
+.active{
+background:rgb(7, 67, 213);
+}
+
+@media (max-width:576px){
+#slider{width:100%;
+
+}
+
+.controls{
+  font-size:1em;
+}
+
+#dots-con{
+  display:none;
+}
+}
+  </style>
+
+    <!--Slider-->
+  <div id="slider">
+    <div class="slide" style="background: orange;"><a href="Math8.html"></a>
+      <img src="pictures\em8.png" >
+    </div>
+
+    <div class="slide" style="background:purple;"><a href="Phy9.html"></a>
+       <img src="pictures\ep9.png" >
+    </div>
+
+    <div class="slide" style="background:orange;"><a href="Chem8.html"></a>
+      <img src="pictures\ec8.png" >
+    </div>
+
+    <div class="slide" style="background: purple;"><a href="Bio7.html"></a>
+      <img src="pictures\eb7.png" >
+    </div>
+
+    <!--Controlling arrows-->
+    <span class="controls" onclick="prevSlide(-1)" id="left-arrow"><i class="fa fa-arrow-left" aria-hidden="true"></i>
+   </span>
+    <span class="controls" id="right-arrow" onclick="nextSlide(1)"><i class="fa fa-arrow-right" aria-hidden="true"></i>
+   </span>
   </div>
-
-  <div class="mySlides fade">
-    <a href="Phy7.html"><img src="pictures\ep7.png" style="width:50%; margin-left:250px"></a>
-    <div class="text">فیزیک هفتم</div>
-  </div>
-
-  <div class="mySlides fade">
-    <a href="Chem7.html"><img src="pictures\ec7.png" style="width:50%; margin-left:250px"></a>
-    <div class="text">شیمی هفتم</div>
-  </div>
-
-  <div class="mySlides fade">
-    <a href="Bio7.html"><img src="pictures\eb7.png" style="width:50%; margin-left:250px"></a>
-    <div class="text">زیست هفتم</div>
-  </div>
+    <div id="dots-con">
+   <span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+   </div>
 
 
-  <div class="mySlides fade">
-    <a href="Math8.html"><img src="pictures\em8.png" style="width:50%; margin-left:250px"></a>
-    <div class="text">ریاضی هشتم</div>
-  </div>
-  <div class="mySlides fade">
-    <a href="Phy8.html"><img src="pictures\ep8.png" style="width:50%; margin-left:250px"></a>
-    <div class="text">فیزیک هشتم</div>
-  </div>
-  <div class="mySlides fade">
-    <a href="Chem8.html"><img src="pictures\ec8.png" style="width:50%; margin-left:250px"></a>
-    <div class="text">شیمی هشتم</div>
-  </div>
-
-  <div class="mySlides fade">
-    <a href="Bio8.html"><img src="pictures\eb8.png" style="width:50%; margin-left:250px"></a>
-    <div class="text">زیست هشتم</div>
-  </div>
-
-  <div class="mySlides fade">
-    <a href="Math9.html"><img src="pictures\em9.png" style="width:50%; margin-left:250px"></a>
-    <div class="text">ریاضی نهم</div>
-  </div>
-
-  <div class="mySlides fade">
-    <a href="Phy9.html"><img src="pictures\ep9.png" style="width:50%; margin-left:250px"></a>
-    <div class="text">فیزیک نهم</div>
-  </div>
-
-  <div class="mySlides fade">
-    <a href="Chem9.html"><img src="pictures\ec9.png" style="width:50%; margin-left:250px"></a>
-    <div class="text">شیمی نهم</div>
-  </div>
-
-  <div class="mySlides fade">
-    <a href="Bio9.html"><img src="pictures\eb9.png" style="width:50%; margin-left:250px"></a>
-    <div class="text">زیست نهم</div>
-  </div>
+<script type="text/javascript">
+var slides = document.querySelectorAll(".slide");
+var dots = document.querySelectorAll(".dot");
+var index = 0;
 
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+function prevSlide(n){
+  index+=n;
+  console.log("prevSlide is called");
+  changeSlide();
+}
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
-  <span class="dot" onclick="currentSlide(8)"></span>
-  <span class="dot" onclick="currentSlide(9)"></span>
-  <span class="dot" onclick="currentSlide(10)"></span>
-  <span class="dot" onclick="currentSlide(11)"></span>
-  <span class="dot" onclick="currentSlide(12)"></span>
+function nextSlide(n){
+  index+=n;
+  changeSlide();
+}
 
-</div>
+changeSlide();
+
+function changeSlide(){
+
+  if(index>slides.length-1)
+    index=0;
+
+  if(index<0)
+    index=slides.length-1;
 
 
-<p> </p>
+
+    for(let i=0;i<slides.length;i++){
+      slides[i].style.display = "none";
+
+      dots[i].classList.remove("active");
+
+
+    }
+
+    slides[index].style.display = "block";
+    dots[index].classList.add("active");
+
+
+
+}
+
+
+
+</script>
 
 <p> </p>
 
